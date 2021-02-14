@@ -1,6 +1,4 @@
 import React from "react";
-import Setup from "./todos/todoFetch";
-
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -57,7 +55,7 @@ class App extends React.Component {
           />
           <button className="btn btn-primary">Submit</button>
         </form>
-        <ul class="list-group">
+        <ol className="list-group">
           {this.state.items.map((item, index) => (
             <li
               style={{
@@ -81,7 +79,7 @@ class App extends React.Component {
               </button>
             </li>
           ))}
-        </ul>
+        </ol>
       </div>
     );
   }
